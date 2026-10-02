@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Heap and Max Heap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Min Heap & Max Heap Tree</h1>
+
+        <div class="controls">
+            <input type="number" id="valueInput" placeholder="Enter a value">
+
+            <button onclick="insertMinHeap()">Insert Min Heap</button>
+            <button onclick="insertMaxHeap()">Insert Max Heap</button>
+
+            <button onclick="deleteMinRoot()">Delete Min Root</button>
+            <button onclick="deleteMaxRoot()">Delete Max Root</button>
+
+            <button onclick="clearHeaps()">Clear</button>
+        </div>
+
+        <div class="heaps">
+
+            <!-- Min Heap -->
+            <div class="heap-container">
+                <h2>Min Heap</h2>
+
+                <div id="minHeapTree" class="tree"></div>
+
+                <h3>Array Representation</h3>
+                <div id="minHeapArray" class="array"></div>
+            </div>
+
+            <!-- Max Heap -->
+            <div class="heap-container">
+                <h2>Max Heap</h2>
+
+                <div id="maxHeapTree" class="tree"></div>
+
+                <h3>Array Representation</h3>
+                <div id="maxHeapArray" class="array"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
